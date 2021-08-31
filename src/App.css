@@ -1,5 +1,5 @@
 #body {
-  margin-top: 5%;
+  margin-top: 2.5%;
 }
 #name {
   margin-top: 3%;
@@ -45,6 +45,5 @@
 
 #about {
   text-align: center;
-  /* margin: 2.5% 20%; */
-  color: white;
+  margin: 2.5% 20%;
 }
