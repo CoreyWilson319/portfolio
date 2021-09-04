@@ -51,7 +51,7 @@ const Home = () => {
         </li>
       </ul>
 
-      <div class="projects">
+      <div class="projects" id="projects">
         <div id="card">
           <Card className="mb-2" border="dark" text="dark">
             <Card.Img src={Bytes} />

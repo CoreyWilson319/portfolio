@@ -1,10 +1,11 @@
 import React from "react";
+import Resume from "../resources/Resume.pdf";
 
 const About = () => {
   return (
     <div>
-      <h1>About</h1>
-      <p>
+      <h1 id="title">About</h1>
+      <p id="about">
         I am a graduate of General Assembly's Software Engineer Immersive
         program. After going some time of trying to self-teach myself to become
         a developer, and losing my job due to covid-19 opened the door for me to
@@ -16,6 +17,11 @@ const About = () => {
         allow me to work well with a team and individually. I am a good problem
         solver and am always trying to think ahead and possible outcomes.
       </p>
+      <div id="resume">
+        <a href={Resume} target="_blank">
+          Resume
+        </a>
+      </div>
     </div>
   );
 };
