@@ -71,7 +71,7 @@ body {
   font-style: italic;
 }
 
-#about {
+#paragraph {
   text-align: center;
   font-size: 30px;
   margin: 2.5% 20%;
@@ -91,4 +91,8 @@ body {
   list-style: none;
   padding: 0;
   margin: 0 auto;
+}
+
+#projects {
+  margin-top: 5%;
 }

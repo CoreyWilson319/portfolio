@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       <h1 id="title">About</h1>
-      <p id="about">
+      <p id="paragraph">
         I am a graduate of General Assembly's Software Engineer Immersive
         program. After going some time of trying to self-teach myself to become
         a developer, and losing my job due to covid-19 opened the door for me to
