@@ -1,11 +1,15 @@
 #body {
   margin-top: 2.5%;
 }
+#navBarLinks {
+  text-align: center;
+}
 #name {
   margin-top: 3%;
   text-align: center;
   font-family: "Source Code Pro", monospace;
   font-size: 60px;
+  font-weight: bolder;
 }
 
 #portrait {
@@ -19,6 +23,17 @@
   margin-top: 1%;
   font-family: "Fjalla One", sans-serif;
   text-align: center;
+  text-decoration: underline;
+}
+
+body {
+  background: rgb(170, 170, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(170, 170, 173, 1) 15%,
+    rgba(157, 157, 157, 0.6951155462184874) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .socials {
@@ -27,6 +42,12 @@
   margin: 0 auto;
   padding: 0;
   font-size: 20px;
+}
+#githubLogo {
+  width: 50px;
+}
+#linkedInLogo {
+  width: 50px;
 }
 
 .projects {
@@ -43,7 +64,9 @@
   /* border: 2px solid black; */
 }
 
-#about {
+#statement {
   text-align: center;
+  font-size: 25px;
   margin: 2.5% 20%;
+  font-style: italic;
 }

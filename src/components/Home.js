@@ -5,7 +5,10 @@ import Resume from "../resources/Resume.pdf";
 import Bytes from "../resources/bytes.png";
 import TargetPopper from "../resources/target_popper.png";
 import RastaImagery from "../resources/rasta_imagery.png";
+import GitHub from "../resources/github.png";
+import LinkedIn from "../resources/linkedin.gif";
 
+// future for mobile change cards to center better
 const Home = () => {
   return (
     <div id="body">
@@ -14,6 +17,11 @@ const Home = () => {
         src="https://avatars.githubusercontent.com/u/72322079?s=400&u=ca5a1b6ce956fce8d8945fe18e83fb98cdba8dbc&v=4"
       ></img>
       <h1 id="name">Corey Wilson</h1>
+      <p id="statement">
+        I'm a thinker and a software engineer, my goal is to do the best that I
+        can do and be happy with the product I put forth and make someones life
+        a little easier.
+      </p>
       <h2 id="title">Software Engineer</h2>
       <ul class="socials">
         <li>
@@ -22,11 +30,13 @@ const Home = () => {
           </a>
         </li>
         <li>
+          <img id="githubLogo" src={GitHub}></img>
           <a target="_blank" href="https://github.com/CoreyWilson319">
             Github
           </a>
         </li>
         <li>
+          <img id="linkedInLogo" src={LinkedIn}></img>
           <a
             target="_blank"
             href="https://www.linkedin.com/in/corey-wilson-3955441b6/"
@@ -47,7 +57,13 @@ const Home = () => {
             <Card.Img src={Bytes} />
             <Card.Body>
               <Card.Title>Bytes</Card.Title>
-              <Card.Text>Text about Project Here</Card.Text>
+              <Card.Text>
+                Bytes is still a work in progress but it's my latest fullstack
+                project that I'm very proud of. It's a fully functioning full
+                stack app that has working authentication. The purpose of it is
+                to find random meals to make to help enjoyable meals that I
+                wouldn't have looked for on my own.
+              </Card.Text>
               <Card.Link
                 target="_blank"
                 href="https://quiet-chamber-78994.herokuapp.com/"
@@ -62,7 +78,13 @@ const Home = () => {
             <Card.Img src={TargetPopper} />
             <Card.Body>
               <Card.Title>Target Popper</Card.Title>
-              <Card.Text>Text about Project Here</Card.Text>
+              <Card.Text>
+                To keep coding I joined a hackathon for mintbean.io and created
+                this in a few days. It's a simple game with a landing page made
+                with javascript, html and css. Using these technologies to
+                create a game without a framework, I learned a lot in the short
+                time frame.
+              </Card.Text>
               <Card.Link
                 target="_blank"
                 href="https://gifted-bell-9d9077.netlify.app/"
@@ -77,7 +99,11 @@ const Home = () => {
             <Card.Img src={RastaImagery} />
             <Card.Body>
               <Card.Title>Rasta Imagery</Card.Title>
-              <Card.Text>Text about Project Here</Card.Text>
+              <Card.Text>
+                This project was done for a friend as my first freelance gig,
+                this was made near the end half of my bootcamp. To show some
+                photographs of the photagraphers collection and takes inquiries.
+              </Card.Text>
               <Card.Link
                 target="_blank"
                 href="https://rasta-imagery.herokuapp.com/"
@@ -88,18 +114,6 @@ const Home = () => {
           </Card>
         </div>
       </div>
-      <p id="about">
-        I am a graduate of General Assembly's Software Engineer Immersive
-        program. After going some time of trying to self-teach myself to become
-        a developer, and losing my job due to covid-19 opened the door for me to
-        take the time to participate in this program. During this program I
-        improved my understanding of the basics of coding as well as taking that
-        knowledge further and developing full stack web applications. I believe
-        that I am ready to take the leap to the next step and become a
-        professional software engineer. I am soft spoken and reserved which
-        allow me to work well with a team and individually. I am a good problem
-        solver and am always trying to think ahead and possible outcomes.
-      </p>
     </div>
   );
 };
