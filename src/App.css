@@ -63,6 +63,12 @@ body {
   width: 20rem;
   /* border: 2px solid black; */
 }
+#cardSmallScreen {
+  font-family: "Cinzel", serif;
+  margin: 0.5rem;
+  width: 10rem;
+  /* border: 2px solid black; */
+}
 
 #statement {
   text-align: center;
@@ -75,6 +81,11 @@ body {
   text-align: center;
   font-size: 30px;
   margin: 2.5% 20%;
+}
+#paragraphSmallScreen {
+  text-align: center;
+  font-size: 30px;
+  margin: 2.5% 10%;
 }
 
 #resume {
