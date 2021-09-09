@@ -14,10 +14,18 @@ const Home = () => {
   return (
     <>
       <div id="body">
-        <img
-          id="portrait"
-          src="https://avatars.githubusercontent.com/u/72322079?s=400&u=ca5a1b6ce956fce8d8945fe18e83fb98cdba8dbc&v=4"
-        ></img>
+        <MediaQuery minWidth={801}>
+          <img
+            id="portraitLargeScreen"
+            src="https://avatars.githubusercontent.com/u/72322079?s=400&u=ca5a1b6ce956fce8d8945fe18e83fb98cdba8dbc&v=4"
+          ></img>
+        </MediaQuery>
+        <MediaQuery minWidth={400} maxWidth={800}>
+          <img
+            id="portrait"
+            src="https://avatars.githubusercontent.com/u/72322079?s=400&u=ca5a1b6ce956fce8d8945fe18e83fb98cdba8dbc&v=4"
+          ></img>
+        </MediaQuery>
         <h1 id="name">Corey Wilson</h1>
         <p id="statement">
           I'm a thinker and a software engineer, my goal is to do the best that
@@ -118,7 +126,7 @@ const Home = () => {
             </div>
           </div>
         </MediaQuery>
-        <MediaQuery minWidth={400}>
+        <MediaQuery minWidth={400} maxWidth={800}>
           <h2 id="projectTitle">Bytes</h2>
           <img id="smallScreenImage" src={Bytes}></img>
           <p id="projectDetails">
