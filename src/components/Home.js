@@ -127,6 +127,7 @@ const Home = () => {
           </div>
         </MediaQuery>
         <MediaQuery minWidth={400} maxWidth={800}>
+          <span id="projects"></span>
           <h2 id="projectTitle">Bytes</h2>
           <img id="smallScreenImage" src={Bytes}></img>
           <p id="projectDetails">
@@ -136,6 +137,13 @@ const Home = () => {
             random meals to make to help enjoyable meals that I wouldn't have
             looked for on my own.
           </p>
+          <a
+            target="_blank"
+            id="projectLink"
+            href="https://quiet-chamber-78994.herokuapp.com/"
+          >
+            Bytes
+          </a>
           <h2 id="projectTitle">Target Popper</h2>
           <img id="smallScreenImage" src={TargetPopper}></img>
           <p id="projectDetails">
@@ -144,6 +152,13 @@ const Home = () => {
             javascript, html and css. Using these technologies to create a game
             without a framework, I learned a lot in the short time frame.
           </p>
+          <a
+            target="_blank"
+            id="projectLink"
+            href="https://gifted-bell-9d9077.netlify.app/"
+          >
+            Target Popper
+          </a>
           <h2 id="projectTitle">Rasta Imagery</h2>
           <img id="smallScreenImage" src={RastaImagery}></img>
           <p id="projectDetails">
@@ -151,6 +166,13 @@ const Home = () => {
             was made near the end half of my bootcamp. To show some photographs
             of the photagraphers collection and takes inquiries.
           </p>
+          <a
+            target="_blank"
+            id="projectLink"
+            href="https://rasta-imagery.herokuapp.com/"
+          >
+            Rasta Imagery
+          </a>
         </MediaQuery>
       </div>
     </>

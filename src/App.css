@@ -4,6 +4,10 @@
 #navBarLinks {
   text-align: center;
 }
+#projectLink {
+  display: block;
+  text-align: center;
+}
 #name {
   margin-top: 3%;
   text-align: center;
