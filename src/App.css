@@ -1,5 +1,5 @@
-#body {
-  margin-top: 2.5%;
+body {
+  background-color: #e9eae8 !important;
 }
 #navBarLinks {
   text-align: center;
@@ -21,13 +21,13 @@
   margin: 0 auto;
   display: block;
   border-radius: 100%;
-  border: 0.5em solid hsl(0, 0%, 85%);
+  border: 0.5em solid hsl(0, 1%, 72%);
 }
 #portraitLargeScreen {
   margin: 0 auto;
   display: block;
   border-radius: 100%;
-  border: 0.5em solid hsl(0, 0%, 85%);
+  border: 0.5em solid hsl(0, 1%, 72%);
 }
 
 #title {
@@ -35,16 +35,6 @@
   font-family: "Fjalla One", sans-serif;
   text-align: center;
   text-decoration: underline;
-}
-
-body {
-  background: rgb(170, 170, 173);
-  background: linear-gradient(
-    90deg,
-    rgba(170, 170, 173, 1) 15%,
-    rgba(157, 157, 157, 0.6951155462184874) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
 }
 
 .socials {
@@ -65,7 +55,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: space-around;
+  /* align-content: space-between; */
+  gap: 5%;
 }
 #projectTitle {
   margin-top: 30px;
@@ -84,13 +75,16 @@ body {
   margin-top: 20px;
 }
 #card {
-  font-family: "Cinzel", serif;
-  margin: 0.5rem;
-  width: 20rem;
+  font-family: sans-serif;
+  width: 30rem;
+  margin-bottom: 10%;
+  /* margin: 0 0 10% 10%; */
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
   /* border: 2px solid black; */
 }
 #cardSmallScreen {
-  font-family: "Cinzel", serif;
+  font-family: sans-serif;
   margin: 0.5rem;
   width: 10rem;
   /* border: 2px solid black; */
@@ -101,17 +95,22 @@ body {
   font-size: 25px;
   margin: 2.5% 20%;
   font-style: italic;
+  max-width: 78ch;
 }
 
 #paragraph {
   text-align: center;
   font-size: 30px;
+  max-width: 78ch;
   margin: 2.5% 20%;
+  font-family: serif;
 }
 #paragraphSmallScreen {
   text-align: center;
   font-size: 30px;
+  max-width: 78ch;
   margin: 2.5% 10%;
+  font-family: serif;
 }
 
 #resume {

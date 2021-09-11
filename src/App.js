@@ -15,6 +15,11 @@ import RastaImagery from "./resources/rasta_imagery.png";
 import GitHub from "./resources/github.png";
 import LinkedIn from "./resources/linkedin.gif";
 
+// Create Projects page should be able to be accessed from the nav bar
+// create a carousel of images would like to make it myself
+// different buttons will show different projects
+// mess around with floor fade with descriptions in the faded area
+
 function App() {
   return (
     <div>
@@ -26,20 +31,24 @@ function App() {
           <Nav.Link href="/skills">Skills</Nav.Link>
         </Nav>
       </Navbar>
-      <Route exact path="/">
-        <Home
-          props={(Resume, Bytes, TargetPopper, RastaImagery, GitHub, LinkedIn)}
-        />
-      </Route>
-      <Route path="/skills">
-        <Skills />
-      </Route>
-      <Route path="/about">
-        <About />
-      </Route>
-      <Route path="/projects">
-        <Projects />
-      </Route>
+      <div id="body">
+        <Route exact path="/">
+          <Home
+            props={
+              (Resume, Bytes, TargetPopper, RastaImagery, GitHub, LinkedIn)
+            }
+          />
+        </Route>
+        <Route path="/skills">
+          <Skills />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+      </div>
     </div>
   );
 }

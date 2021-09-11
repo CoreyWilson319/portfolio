@@ -4,7 +4,7 @@ import MediaQuery from "react-responsive";
 
 const About = () => {
   return (
-    <div>
+    <div id="body">
       <h1 id="title">About</h1>
       <MediaQuery minWidth={801}>
         <p id="paragraph">

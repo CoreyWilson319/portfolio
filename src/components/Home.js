@@ -13,6 +13,7 @@ import MediaQuery from "react-responsive";
 const Home = () => {
   return (
     <>
+      <br />
       <div id="body">
         <MediaQuery minWidth={801}>
           <img
