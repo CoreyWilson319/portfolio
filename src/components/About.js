@@ -1,5 +1,4 @@
 import React from "react";
-import Resume from "../resources/Resume.pdf";
 import MediaQuery from "react-responsive";
 
 const About = () => {
@@ -37,7 +36,10 @@ const About = () => {
         </p>
       </MediaQuery>
       <div id="resume">
-        <a href={Resume} target="_blank">
+        <a
+          href="https://docs.google.com/document/d/1UQKqVzVsG6i7crBNwZEAarXnqLTfu7twLyKMQnAUHkg/edit"
+          target="_blank"
+        >
           Resume
         </a>
       </div>
