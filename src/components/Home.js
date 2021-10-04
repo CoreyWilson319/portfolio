@@ -1,7 +1,6 @@
 import React from "react";
 import "../App.css";
 import { Card, Button } from "react-bootstrap";
-import Resume from "../resources/Resume.pdf";
 import Bytes from "../resources/bytes.png";
 import TargetPopper from "../resources/target_popper.png";
 import RastaImagery from "../resources/rasta_imagery.png";
@@ -70,7 +69,10 @@ const Home = () => {
         <h2 id="title">Software Engineer</h2>
         <ul class="socials">
           <li>
-            <a target="_blank" href={Resume}>
+            <a
+              target="_blank"
+              href="https://docs.google.com/document/d/1UQKqVzVsG6i7crBNwZEAarXnqLTfu7twLyKMQnAUHkg/edit"
+            >
               Resume
             </a>
           </li>

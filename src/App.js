@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import { Container, Nav } from "react-bootstrap";
-import Resume from "./resources/Resume.pdf";
 import Bytes from "./resources/bytes.png";
 import TargetPopper from "./resources/target_popper.png";
 import RastaImagery from "./resources/rasta_imagery.png";
@@ -33,11 +32,7 @@ function App() {
       </Navbar>
       <div id="body">
         <Route exact path="/">
-          <Home
-            props={
-              (Resume, Bytes, TargetPopper, RastaImagery, GitHub, LinkedIn)
-            }
-          />
+          <Home props={(Bytes, TargetPopper, RastaImagery, GitHub, LinkedIn)} />
         </Route>
         <Route path="/skills">
           <Skills />
