@@ -11,6 +11,40 @@ import MediaQuery from "react-responsive";
 
 // future for mobile change cards to center better
 const Home = () => {
+  let rastaImagerDescription = (
+    <p>
+      {" "}
+      This project was done for a friend as my first freelance gig, this was
+      made near the end half of my bootcamp. To show some photographs of the
+      photagraphers collection and takes inquiries. At the moment RastaImagery
+      only uses React, javascript, bootstrap and a few other modules.
+    </p>
+  );
+  let bytesDescription = (
+    <p>
+      Bytes is still a work in progress but it's my latest fullstack project
+      that I'm very proud of. It's a fully functioning full stack app that has
+      working authentication. The purpose of it is to find random meals to make
+      to help enjoyable meals that I wouldn't have looked for on my own. Bytes
+      is built using a MERN stack, and using the Spoonacular api. I used
+      suggestions from my own friends and family to improve upon the inital idea
+      for the project. I personally get tired of eating the same things and I
+      like to explore in the kitchen. So Bytes purpose is to expose the user to
+      a variety of dishes to increase the variety of foods they consume.
+    </p>
+  );
+  let targetPopperDescription = (
+    <p>
+      To keep coding I joined a hackathon for mintbean.io and created this in a
+      few days. It's a simple game with a landing page made with javascript,
+      html and css. Using these technologies to create a game without a
+      framework, I learned a lot in the short time frame. It's only built with
+      javascript, html and css.
+    </p>
+  );
+  let rastaImageryRepo = "https://github.com/CoreyWilson319/rasta-imagery";
+  let targetPopperRepo = "https://github.com/CoreyWilson319/target-popper";
+  let bytesRepo = "https://github.com/CoreyWilson319/meal_planner";
   return (
     <>
       <br />
@@ -68,18 +102,15 @@ const Home = () => {
                 <Card.Img src={Bytes} />
                 <Card.Body>
                   <Card.Title>Bytes</Card.Title>
-                  <Card.Text>
-                    Bytes is still a work in progress but it's my latest
-                    fullstack project that I'm very proud of. It's a fully
-                    functioning full stack app that has working authentication.
-                    The purpose of it is to find random meals to make to help
-                    enjoyable meals that I wouldn't have looked for on my own.
-                  </Card.Text>
+                  <Card.Text>{bytesDescription}</Card.Text>
                   <Card.Link
                     target="_blank"
                     href="https://quiet-chamber-78994.herokuapp.com/"
                   >
                     Link to Bytes
+                  </Card.Link>
+                  <Card.Link target="_blank" href={bytesRepo}>
+                    Link to Bytes Repo
                   </Card.Link>
                 </Card.Body>
               </Card>
@@ -89,18 +120,15 @@ const Home = () => {
                 <Card.Img src={TargetPopper} />
                 <Card.Body>
                   <Card.Title>Target Popper</Card.Title>
-                  <Card.Text>
-                    To keep coding I joined a hackathon for mintbean.io and
-                    created this in a few days. It's a simple game with a
-                    landing page made with javascript, html and css. Using these
-                    technologies to create a game without a framework, I learned
-                    a lot in the short time frame.
-                  </Card.Text>
+                  <Card.Text>{targetPopperDescription}</Card.Text>
                   <Card.Link
                     target="_blank"
                     href="https://gifted-bell-9d9077.netlify.app/"
                   >
                     Link to Target Popper
+                  </Card.Link>
+                  <Card.Link target="_blank" href={targetPopperRepo}>
+                    Link to Target Popper Repo
                   </Card.Link>
                 </Card.Body>
               </Card>
@@ -110,17 +138,15 @@ const Home = () => {
                 <Card.Img src={RastaImagery} />
                 <Card.Body>
                   <Card.Title>Rasta Imagery</Card.Title>
-                  <Card.Text>
-                    This project was done for a friend as my first freelance
-                    gig, this was made near the end half of my bootcamp. To show
-                    some photographs of the photagraphers collection and takes
-                    inquiries.
-                  </Card.Text>
+                  <Card.Text>{rastaImagerDescription}</Card.Text>
                   <Card.Link
                     target="_blank"
                     href="https://rasta-imagery.herokuapp.com/"
                   >
                     Link to Rasta Imagery
+                  </Card.Link>
+                  <Card.Link target="_blank" href={rastaImageryRepo}>
+                    Link to Rasta Imagery Repo
                   </Card.Link>
                 </Card.Body>
               </Card>
@@ -131,48 +157,43 @@ const Home = () => {
           <span id="projects"></span>
           <h2 id="projectTitle">Bytes</h2>
           <img id="smallScreenImage" src={Bytes}></img>
-          <p id="projectDetails">
-            Bytes is still a work in progress but it's my latest fullstack
-            project that I'm very proud of. It's a fully functioning full stack
-            app that has working authentication. The purpose of it is to find
-            random meals to make to help enjoyable meals that I wouldn't have
-            looked for on my own.
-          </p>
+          <p id="projectDetails">{bytesDescription}</p>
           <a
             target="_blank"
             id="projectLink"
             href="https://quiet-chamber-78994.herokuapp.com/"
           >
-            Bytes
+            Link to Bytes
+          </a>
+          <a target="_blank" id="projectLink" href={bytesRepo}>
+            Bytes Repo
           </a>
           <h2 id="projectTitle">Target Popper</h2>
           <img id="smallScreenImage" src={TargetPopper}></img>
-          <p id="projectDetails">
-            To keep coding I joined a hackathon for mintbean.io and created this
-            in a few days. It's a simple game with a landing page made with
-            javascript, html and css. Using these technologies to create a game
-            without a framework, I learned a lot in the short time frame.
-          </p>
+          <p id="projectDetails">{targetPopperDescription}</p>
           <a
             target="_blank"
             id="projectLink"
             href="https://gifted-bell-9d9077.netlify.app/"
           >
-            Target Popper
+            Link to Target Popper
+          </a>
+          <a target="_blank" id="projectLink" href={targetPopperRepo}>
+            Target Popper Repo
           </a>
           <h2 id="projectTitle">Rasta Imagery</h2>
           <img id="smallScreenImage" src={RastaImagery}></img>
-          <p id="projectDetails">
-            This project was done for a friend as my first freelance gig, this
-            was made near the end half of my bootcamp. To show some photographs
-            of the photagraphers collection and takes inquiries.
-          </p>
+          <p id="projectDetails">{rastaImagerDescription}</p>
           <a
             target="_blank"
             id="projectLink"
             href="https://rasta-imagery.herokuapp.com/"
           >
-            Rasta Imagery
+            {" "}
+            RastaImagery Repo
+          </a>
+          <a target="_blank" id="projectLink" href={rastaImageryRepo}>
+            Link to Rasta Imagery
           </a>
         </MediaQuery>
       </div>
